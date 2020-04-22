@@ -3,9 +3,6 @@
 > This app has been created in Android Studio with Java
 
 ## Preview
-
----
-
 ![](./StockPictureExample.png)
 
 ## Source Code
