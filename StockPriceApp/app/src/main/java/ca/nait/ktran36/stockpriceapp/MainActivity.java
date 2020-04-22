@@ -13,7 +13,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.Entry;
@@ -32,13 +31,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * @author Kevin Tran
+ * @version 1.0.0
+ *  This app is made to search a stock ticker symbol, display data accordingly.
+ *  It will also feature a historical monthly data chart
+ */
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText et;
     ArrayList<HashMap<String, String>> stockList;
     ArrayList<HashMap<String, String>> historyList;
     LineChart chart;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -235,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // Set stockList to empty to allow a second search
             stockList.clear();
             TextView tv = findViewById(R.id.main_textview_chart_title);
-            tv.setText("Monthly Historical Data for " + companyName + ":");
+            tv.setText("Monthly Historical Data for " + companyName);
             setMonthlyDataAndRenderChart();
 
             // Set historyList to empty to be able to re render the chart
