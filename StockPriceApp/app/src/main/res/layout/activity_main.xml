@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/main_textview_title"
+        android:textColor="@color/grey"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/main_textview_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/main_textView_description"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/main_edittext_ticker"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/main_textview_description"
+        android:hint="@string/main_edittext_hint"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background"
+
+        android:layout_toRightOf="@id/main_edittext_ticker"
+        android:text="@string/main_button_submit"
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/main_textview_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_description"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/main_textview_symbol"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/main_symbol_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_description"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/main_textview_symbol"
+
+        />
+
+    <TextView
+        android:id="@+id/main_textview_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_description"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/main_textview_companyname"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/main_company_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_description"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/main_textview_company" />
+
+    <TextView
+        android:id="@+id/main_textview_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_symbol"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/main_textview_currentprice"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/main_price_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_symbol"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/main_textview_price" />
+
+    <TextView
+        android:id="@+id/main_textview_peratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_symbol"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/main_textview_price"
+        android:text="@string/main_textview_peratio"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/main_peratio_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_company"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/main_textview_peratio" />
+
+    <TextView
+        android:id="@+id/main_textview_52weeklow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/main_textview_52weeklow"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/main_weeklow_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/main_textview_52weeklow" />
+
+    <TextView
+        android:id="@+id/main_textview_52weekhigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_price"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/main_textview_52weeklow"
+        android:text="@string/main_textview_52weekhigh"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/main_weekhigh_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/main_textview_52weekhigh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textview_52weeklow"
+        android:id="@+id/main_textview_chart_title"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="10dp"
+        android:text=""/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="400dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/main_textview_chart_title"/>
+
+
+    />
+
+
+</RelativeLayout>
