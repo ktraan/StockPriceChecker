@@ -5,6 +5,4 @@
 ## Preview
 ![](./StockPictureExample.png)
 
-## Source Code
-
-[Source Code](StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java)
+## [Source Code](StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java)
